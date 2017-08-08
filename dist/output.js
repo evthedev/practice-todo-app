@@ -60,32 +60,64 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports) {
+
+module.exports = React;
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var React = __webpack_require__(1);
+var React = __webpack_require__(0);
 var ReactDOM = __webpack_require__(2);
-ReactDOM.render(React.createElement("div", null, "TODO list"), document.getElementById('app'));
+var App_1 = __webpack_require__(3);
+ReactDOM.render(React.createElement(App_1.App, null), document.getElementById('app'));
 
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-module.exports = React;
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports) {
 
 module.exports = ReactDOM;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
+var App = (function (_super) {
+    __extends(App, _super);
+    function App() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    App.prototype.render = function () {
+        return React.createElement("div", null, "TODO List");
+    };
+    return App;
+}(React.Component));
+exports.App = App;
+
 
 /***/ })
 /******/ ]);
